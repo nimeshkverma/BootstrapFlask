@@ -1,0 +1,15 @@
+<html>
+	<link rel="stylesheet" media="screen" href = "{{ url_for('static', filename='bootstrap.min.css') }}">
+	<head>
+		<title>My Site</title>
+	</head>
+	<body>
+		<div id="header">Hello from the Base Template</div>
+		<div id="messages-wrap">
+			<div id="messages">
+			</div>
+		</div>
+		<div id="content">{% block content %}{% endblock %}</div>
+		<div id="footer">{% block footer %}{% endblock %}</div>
+	</body>
+</html>
