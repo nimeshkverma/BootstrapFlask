@@ -1,6 +1,6 @@
 #!flask/bin/python
 from flask.ext.script import Manager
-
+from flask import url_for
 from app import app
 
 manager = Manager(app)
